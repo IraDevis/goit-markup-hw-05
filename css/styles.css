@@ -82,6 +82,7 @@ img {
 .header-container {
   display: flex;
   align-items: center;
+
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -113,11 +114,12 @@ img {
   padding-top: 30px;
   padding-bottom: 34px;
 
-  color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  color: var(--secondary-text-color);
 }
 
 .site-nav a:hover,
@@ -129,11 +131,13 @@ img {
 .current-page::after {
   content: "";
   position: absolute;
+
   width: 100%;
   height: 4px;
   left: 0;
   bottom: 0;
   border-radius: 2px;
+
   background-color: var(--accent-text-color);
 }
 
@@ -166,6 +170,7 @@ img {
   display: flex;
   padding-top: 30px;
   padding-bottom: 34px;
+
   color: var(--main-text-color);
 }
 
@@ -191,14 +196,17 @@ img {
 footer {
   display: flex;
   align-items: center;
-  background-color: var(--accent-bg-color);
+
   padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: var(--accent-bg-color);
 }
 
 .footer-container {
   display: flex;
   align-items: baseline;
+
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -249,8 +257,9 @@ footer {
 
 .get-us {
   display: block;
+
   margin-bottom: 20px;
-  font-family: Roboto, sans-serif;
+
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -258,6 +267,7 @@ footer {
   letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
+
   color: var(--title-text-color);
 }
 
@@ -270,9 +280,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--title-text-color);
 }
@@ -280,6 +292,7 @@ footer {
 .footer-socials .social-icon {
   width: 20px;
   height: 20px;
+
   fill: currentColor;
 }
 
@@ -300,7 +313,9 @@ footer {
   height: 600px;
   padding-top: 200px;
   padding-bottom: 280px;
+
   text-align: center;
+
   background-color: var(--accent-bg-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
   background-repeat: no-repeat;
@@ -326,6 +341,7 @@ footer {
 
 .hero-link {
   display: inline-block;
+
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
@@ -399,10 +415,12 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
+
   background-color: var(--secondary-bg-color);
 }
 
@@ -436,6 +454,7 @@ footer {
   left: 0;
 
   display: block;
+
   width: 100%;
   height: 70px;
   margin-top: 0;
@@ -458,6 +477,7 @@ footer {
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
+
   background-color: var(--secondary-bg-color);
 }
 
@@ -515,15 +535,18 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
+
   color: var(--main-icons-color);
 }
 
 .social-icon {
   width: 20px;
   height: 20px;
+
   fill: currentColor;
 }
 
@@ -561,9 +584,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+
   height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
   color: var(--main-icons-color);
 }
 
@@ -594,10 +619,12 @@ footer {
 
 .sorting-buttons button {
   display: inline-block;
+
   padding: 6px 22px;
   border-color: transparent;
   border-radius: 4px;
   outline: none;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -619,6 +646,7 @@ footer {
 .container .sorting-buttons {
   display: flex;
   justify-content: center;
+
   margin-bottom: 50px;
 }
 
@@ -640,6 +668,8 @@ footer {
 }
 
 .project-item {
+  position: relative;
+
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
@@ -651,8 +681,8 @@ footer {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-link .project-description:hover,
-.project-link .project-description:focus {
+.project-link:hover .project-description,
+.project-link:focus .project-description {
   opacity: 1;
 }
 
@@ -686,19 +716,15 @@ footer {
   letter-spacing: 0.03em;
 }
 
-.project-thumb {
-  position: relative;
-}
-
 .project-description {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
 
   width: 100%;
-  height: 100%;
+  height: 294px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 110px;
   padding: 63px 24px;
 
   font-weight: 400;
