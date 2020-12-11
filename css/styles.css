@@ -370,10 +370,10 @@ footer {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-} */
+}
 
 .modal {
   position: absolute;
