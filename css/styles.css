@@ -339,13 +339,14 @@ footer {
   color: var(--title-text-color);
 }
 
-.hero-link {
+.hero-button {
   display: inline-block;
 
   min-width: 200px;
   min-height: 50px;
   padding: 10px 32px;
   border-radius: 4px;
+  outline: none;
 
   font-weight: 700;
   font-size: 16px;
@@ -354,6 +355,7 @@ footer {
 
   color: var(--title-text-color);
   background-color: var(--accent-text-color);
+  border-color: transparent;
 }
 
 /* Модалка */
@@ -368,9 +370,10 @@ footer {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
-} */
+  pointer-events: none;
+}
 
 .modal {
   position: absolute;
@@ -397,7 +400,7 @@ footer {
   letter-spacing: 0.03em;
   text-align: center;
 
-  background-color: var(--main-bg-color);
+  color: var(--secondary-text-color);
 }
 
 /* Преимущества */
