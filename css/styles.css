@@ -518,7 +518,7 @@ footer {
 
 .work-item {
   position: relative;
-  z-index: -1;
+  z-index: 0;
   width: calc((100% - 60px) / 3);
 }
 
