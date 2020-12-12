@@ -620,7 +620,7 @@ footer {
 
   color: var(--main-icons-color);
 
-  transition: all 250ms var(--time-function);
+  transition: background-color 250ms var(--time-function), color 250ms var(--time-function);
 }
 
 .social-icon {
@@ -671,7 +671,7 @@ footer {
 
   color: var(--main-icons-color);
 
-  transition: all 250ms var(--time-function);
+  transition: border-color 250ms var(--time-function), color 250ms var(--time-function);
 }
 
 .client-icon {
@@ -716,7 +716,7 @@ footer {
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
 
-  transition: all 250ms var(--time-function);
+  transition: background-color 250ms var(--time-function), color 250ms var(--time-function), box-shadow 250ms var(--time-function);
 }
 
 .sorting-buttons button:hover,
