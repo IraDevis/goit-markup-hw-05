@@ -9,6 +9,7 @@
   --border-color-head: #ececec;
   --border-color-elements: #eeeeee;
   --main-icons-color: #afb1b8;
+  --time-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ОБЩЕЕ */
@@ -120,6 +121,8 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
+
+  transition: color 250ms var(--time-function);
 }
 
 .site-nav a:hover,
@@ -157,21 +160,20 @@ img {
   margin-bottom: 0;
 }
 
-.header-contacts a {
-  align-items: center;
-}
-
-.header-contacts a:hover,
-.header-contacts a:focus {
-  color: var(--accent-text-color);
-}
-
 .header-contacts .link {
   display: flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 34px;
 
   color: var(--main-text-color);
+
+  transition: color 250ms var(--time-function);
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-text-color);
 }
 
 .header-contacts .item:not(:last-child) {
@@ -246,6 +248,10 @@ footer {
   letter-spacing: 0.03em;
 }
 
+.footer-contacts a {
+  transition: color 250ms var(--time-function);
+}
+
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   color: var(--accent-text-color);
@@ -287,6 +293,8 @@ footer {
 
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--title-text-color);
+
+  transition: background-color 250ms var(--time-function);
 }
 
 .footer-socials .social-icon {
@@ -406,11 +414,15 @@ footer {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--main-bg-color);
+  box-shadow: none;
+
+  transition: box-shadow 250ms var(--time-function);
 }
 
 .close-button:hover,
 .close-button:focus {
   outline: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
 .close-icon {
@@ -605,6 +617,8 @@ footer {
   border-radius: 50%;
 
   color: var(--main-icons-color);
+
+  transition: all 250ms var(--time-function);
 }
 
 .social-icon {
@@ -654,6 +668,8 @@ footer {
   border-radius: 4px;
 
   color: var(--main-icons-color);
+
+  transition: all 250ms var(--time-function);
 }
 
 .client-icon {
@@ -697,6 +713,8 @@ footer {
 
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
+
+  transition: all 250ms var(--time-function);
 }
 
 .sorting-buttons button:hover,
@@ -737,15 +755,14 @@ footer {
   margin-bottom: 30px;
 }
 
+.project-link {
+  transition: box-shadow 250ms var(--time-function);
+}
+
 .project-link:hover,
 .project-link:focus {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project-link:hover .project-overlay,
-.project-link:focus .project-overlay {
-  transform: translateY(0);
 }
 
 .project-item:nth-child(3n) {
@@ -804,4 +821,9 @@ footer {
   color: var(--title-text-color);
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-link:hover .project-overlay,
+.project-link:focus .project-overlay {
+  transform: translateY(0);
 }
